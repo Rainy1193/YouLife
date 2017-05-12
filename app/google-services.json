@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "813746894155",
+    "firebase_url": "https://youlife-7901f.firebaseio.com",
+    "project_id": "youlife-7901f",
+    "storage_bucket": "youlife-7901f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813746894155:android:676f84b6133d5951",
+        "android_client_info": {
+          "package_name": "rain.endless.youlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813746894155-gmbeac13cf51vqm79eqcfndi6grk19b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rain.endless.youlife",
+            "certificate_hash": "c41d5a7e84a86d4af6b1039089155d242b888a8a"
+          }
+        },
+        {
+          "client_id": "813746894155-rs7r74ft1c833t02ivl8eem07otsns76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxfrtZIzO0-__trMOktA9bqz5_NVP8FYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813746894155-rs7r74ft1c833t02ivl8eem07otsns76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
