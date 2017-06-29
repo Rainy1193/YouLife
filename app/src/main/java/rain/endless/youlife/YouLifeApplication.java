@@ -2,13 +2,20 @@ package rain.endless.youlife;
 
 import android.app.Application;
 
-/**
- * Created by RAINY on 5/12/2017.
- */
-
 public class YouLifeApplication extends Application {
+
+    private static YouLifeApplication mApplication;
+
+    public static YouLifeApplication getInstance() {
+        if (mApplication == null) {
+            mApplication = new YouLifeApplication();
+        }
+        return mApplication;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
     }
+
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeLogo">48sp</dimen>
+    <dimen name="corners_default">2dp</dimen>
+    <dimen name="margin_view_login">8dp</dimen>
+    <dimen name="margin_view_login1">16dp</dimen>
+    <dimen name="margin_view_login2">32dp</dimen>
+    <dimen name="margin_view_login3">48dp</dimen>
+</resources>
