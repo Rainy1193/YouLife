@@ -1,4 +1,4 @@
-package rain.endless.youlife.util;
+package rain.endless.youlife.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

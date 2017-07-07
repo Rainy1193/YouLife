@@ -6,4 +6,10 @@
     <dimen name="margin_view_login1">16dp</dimen>
     <dimen name="margin_view_login2">32dp</dimen>
     <dimen name="margin_view_login3">48dp</dimen>
+    <dimen name="height_bt_login">50dp</dimen>
+    <dimen name="height_layout_login">40dp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+    <dimen name="text_size_icon">20sp</dimen>
+    <dimen name="text_size_login">16sp</dimen>
+    <dimen name="height_line">0.5dp</dimen>
 </resources>

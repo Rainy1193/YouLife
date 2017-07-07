@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ThemeLogin" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorBgLogin2</item>
+        <item name="colorPrimaryDark">@color/colorBgLogin2</item>
+        <item name="colorAccent">@color/colorBtLogin</item>
+    </style>
     <style name="ThemeTranslucent" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -16,4 +21,26 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
+    <style name="TextViewIconStyle" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/text_size_icon</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextViewLogin" parent="android:Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/text_size_login</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+    </style>
+
+    <style name="EditTextLogin" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/bg_et_login</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/text_size_login</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+    </style>
 </resources>

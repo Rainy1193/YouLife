@@ -1,5 +1,6 @@
 package rain.endless.youlife;
 
+import android.app.Activity;
 import android.app.Application;
 
 public class YouLifeApplication extends Application {
@@ -11,6 +12,10 @@ public class YouLifeApplication extends Application {
             mApplication = new YouLifeApplication();
         }
         return mApplication;
+    }
+
+    public static String getTag(Activity activity) {
+        return activity.getClass().getSimpleName();
     }
 
     @Override

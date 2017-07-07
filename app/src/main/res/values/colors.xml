@@ -3,8 +3,10 @@
     <color name="colorPrimary">#212121</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#9E9E9E</color>
+
     <color name="colorBackground">#303030</color>
     <color name="colorDialogCard">#424242</color>
+    <color name="colorGrey900">#212121</color>
     <color name="colorGrey700">#616161</color>
     <color name="colorGrey600">#757575</color>
     <color name="colorGrey500">#9E9E9E</color>
@@ -15,5 +17,24 @@
     <color name="colorGrey50">#FAFAFA</color>
 
     <color name="colorEt50">#979797</color>
-    <color name="colorGrey200_80">#EEEEEE</color>
+    <color name="colorGrey200_80">#80EEEEEE</color>
+
+    <color name="colorTeal">#009688</color>
+    <color name="colorTeal50">#E0F2F1</color>
+    <color name="colorTeal100">#B2DFDB</color>
+    <color name="colorTeal200">#80CBC4</color>
+    <color name="colorTeal300">#4DB6AC</color>
+    <color name="colorTeal400">#26A69A</color>
+    <color name="colorTeal500">#009688</color>
+    <color name="colorTeal600">#00897B</color>
+    <color name="colorTeal900">#004D40</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorCyan900">#006064</color>
+    <color name="colorCyan400">#00BCD4</color>
+    <color name="colorBtLogin">#0FA484</color>
+
+    <color name="colorBgLogin">#2C5B6F</color>
+    <color name="colorBgLogin1">#2C3145</color>
+    <color name="colorBgLogin2">#2C7890</color>
 </resources>

@@ -1,101 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_login"
+    android:background="@drawable/bg_login"
     tools:context=".activity.LoginActivity">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutTop"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside"
-        app:layout_constraintVertical_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <!--<ImageView-->
-            <!--android:layout_width="72dp"-->
-            <!--android:layout_height="72dp"-->
-            <!--android:src="@mipmap/ic_launcher"-->
-            <!--app:layout_constraintBottom_toTopOf="@id/tvAppName"-->
-            <!--app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--app:layout_constraintRight_toRightOf="parent" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
 
-        <TextView
-            android:id="@+id/tvAppName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textColor="@color/colorGrey100"
-            android:textSize="@dimen/textSizeLogo"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/layoutBottom"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutTop"
-        app:layout_constraintVertical_chainStyle="spread_inside"
-        app:layout_constraintVertical_weight="1">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvEmail"
+            <rain.endless.youlife.widget.CustomTextView
+                android:id="@+id/tvBack"
+                style="@style/TextViewIconStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/icon_email" />
+                android:layout_margin="@dimen/margin_view_login"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="@dimen/margin_view_login1"
+                android:text="@string/icon_back"
+                android:visibility="invisible" />
 
-            <EditText
-                android:id="@+id/etEmail"
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_et_login"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress" />
-        </android.support.constraint.ConstraintLayout>
+                android:layout_centerInParent="true">
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvLogo"
+                    style="@style/TextViewLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/logo"
+                    android:textSize="100sp" />
+            </RelativeLayout>
+        </RelativeLayout>
 
-            <TextView
-                android:id="@+id/tvPassWord"
-                android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutLogin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_view_login2"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_layout_login">
+
+                <rain.endless.youlife.widget.CustomTextView
+                    style="@style/TextViewIconStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/icon_email" />
+
+                <EditText
+                    android:id="@+id/etEmailLogin"
+                    style="@style/EditTextLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_view_login2"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorWhite" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_layout_login"
+                android:layout_marginTop="@dimen/margin_view_login">
+
+                <rain.endless.youlife.widget.CustomTextView
+                    style="@style/TextViewIconStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/icon_password" />
+
+                <EditText
+                    android:id="@+id/etPasswordLogin"
+                    style="@style/EditTextLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_view_login2"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_view_login1"
+                android:background="@drawable/bg_bt_login"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/icon_email" />
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/etPassWord"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_et_login"
-                android:hint="@string/password" />
-        </android.support.constraint.ConstraintLayout>
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    style="@style/TextViewLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_view_login1"
+                    android:text="@string/forgot_password" />
 
-        <Button
-            android:id="@+id/btLogin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="24dp"
-            android:background="@drawable/bg_bt_login"
-            android:text="@string/login"
-            android:textColor="@color/colorBackground"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-    </android.support.constraint.ConstraintLayout>
+                <TextView
+                    android:id="@+id/tvSignUp"
+                    style="@style/TextViewLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_view_login1"
+                    android:text="@string/sign_up" />
+            </LinearLayout>
+        </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/layoutSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_view_login2"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_layout_login">
+
+                <rain.endless.youlife.widget.CustomTextView
+                    style="@style/TextViewIconStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/icon_email" />
+
+                <EditText
+                    android:id="@+id/etEmailSignUp"
+                    style="@style/EditTextLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_view_login2"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorWhite" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_layout_login"
+                android:layout_marginTop="@dimen/margin_view_login">
+
+                <rain.endless.youlife.widget.CustomTextView
+                    style="@style/TextViewIconStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/icon_password" />
+
+                <EditText
+                    android:id="@+id/etPasswordSignUp"
+                    style="@style/EditTextLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_view_login2"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorWhite" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_layout_login"
+                android:layout_marginTop="@dimen/margin_view_login">
+
+                <rain.endless.youlife.widget.CustomTextView
+                    style="@style/TextViewIconStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/icon_re_password" />
+
+                <EditText
+                    android:id="@+id/etRePasswordSignUp"
+                    style="@style/EditTextLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_view_login2"
+                    android:hint="@string/re_password"
+                    android:inputType="textPassword" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_view_login1"
+                android:background="@drawable/bg_bt_login"
+                android:text="@string/sign_up1"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_button" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,6 +1,14 @@
 <resources>
-    <string name="app_name">YouLife</string>
-    <string name="login">Log in</string>
-    <string name="email">EMAIL</string>
-    <string name="password">PASSWORD</string>
+
+    <string name="app_name">You Life</string>
+    <string name="login">Log In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re-password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="logo">L</string>
+    <string name="app_name_login">You Life</string>
+    <string name="sign_up1">Sign Up</string>
+    <string name="facebook_app_id">"249710155517647"</string>
 </resources>
